@@ -1,3 +1,8 @@
+// using namespace std
+// By adding using namespace std; at the beginning of your program, you're telling the compiler that you want to use all the names from the std namespace without explicitly specifying std:: each time. This can make your code cleaner and more concise.
+
+
+
 // #include<iostream>
 // #include<math.h>
 // using namespace std;
