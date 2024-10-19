@@ -1,4 +1,5 @@
 // using namespace std
+
 // By adding using namespace std; at the beginning of your program, you're telling the compiler that you want to use all the names from the std namespace without explicitly specifying std:: each time. This can make your code cleaner and more concise.
 
 
@@ -21,12 +22,28 @@
 
 // Taking User Input using cin
 
-#include<iostream>
-using namespace std;
-int main()
-{
-    int x;
-    cin>>x;
-    cout<<"The entered number is: "<<x;
-    return 0;
-}
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int x;
+//     cin>>x;
+//     cout<<"The entered number is: "<<x;
+//     return 0;
+// }
+
+
+// #include<iostream>
+// using namespace std;
+
+// int main() {
+//     int x;
+//     int y;
+//     cin >> x >> y;
+//     cout << "Value of x : " << x << " and y : " <<y;
+//     return 0;
+// }
+
+
+// #include<bits/stdc++.h>.
+// The bits/stdc++.h header is a shortcut that includes a vast number of standard C++ libraries, making it easier to access a wide range of functions and classes without specifying each library individually. It's a time-saving approach for programmers, especially when you need several standard libraries in your code.
