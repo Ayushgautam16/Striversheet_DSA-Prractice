@@ -18,3 +18,15 @@
 
 // As you can see, the newline character \n inserts a line break, but the second "Hey, Striver!" is still on the same line as the first one.
 // You can also use std::endl to insert a newline character and flush the output buffer. Here's the code and its corresponding terminal output:
+
+// Taking User Input using cin
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int x;
+    cin>>x;
+    cout<<"The entered number is: "<<x;
+    return 0;
+}
