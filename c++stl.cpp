@@ -273,8 +273,8 @@ void explainSet(){
 
 }
 
-void multiplySet(){
-
+void multiSet(){
+// there can be duplicate values in the set
     set<int> s1 = {1,2,3};
     set<int> s2 = {3,4,5};
     set<int> s3;
@@ -292,6 +292,44 @@ void multiplySet(){
 void explainUnorderset(){
     // it stores elmt in unsorted order and stores the unique value each time
 }
+
+void explainmap(){
+    // it stores elmt in sorted order and stores the unique value each time
+
+    // key value pair basically in the set
+
+    map<string,int> m;
+    m["ayush"] = 1;
+    m["gautam"] = 2;
+    m["kumar"] = 3;
+
+    map<int,int> mpp;
+    map<int,pair<int, int>>mpp;
+    // mpp[1] = {1,2};
+
+}
+
+void multimap(){
+    // there can be duplicate values in the multimap
+    
+}
+
+void sortingalgo(){
+    // bubble sort, insertion sort, selection sort, merge sort, quick sort, heap sort, radix sort
+
+    // sort(a,a+n);    it sorts by simple one line of code a = first elmt and a+n = last elmt
+    // sort(v.begin(),v.end()); here we sort by simple one line of code in a vectpr also a = first elmt and a
+
+    // sort(a+2,a+4);
+    // sort(arr,arr+5); here we sort by simple one line of code in an array also a = first elmt and a+5 = last elmt
+
+    // sort(a,a+n,greater<int>);
+
+
+
+    
+}
+
 int main(){
     // explainPair();
     
@@ -304,3 +342,6 @@ int main(){
     return 0;
 
 }
+
+
+
