@@ -19,3 +19,22 @@
 // sort() in C++ STL
 // min_element() in C++ STL
 // max_element() in C++ STL
+
+
+
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a;
+    cin>>a;
+    cout <<a;
+    
+
+
+
+
+
+
+    return 0;
+}
