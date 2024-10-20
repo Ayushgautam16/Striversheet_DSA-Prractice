@@ -61,17 +61,17 @@
 // vector is dynamic in nature whereas array are of fied size in the nature of storing the data inside of it 
 #include <bits/stdc++.h>
 using namespace std;
-void explainPair()
-{
-    pair<int, int> p= {1,2};
-    cout<<p.first<<" "<<p.second;
+// void explainPair()
+// {
+//     pair<int, int> p= {1,2};
+//     cout<<p.first<<" "<<p.second;
 
-    pair<int,pair<int,int>> q= {1,{2,3}};
-    cout<<q.first<<" "<<q.second.first<<" "<<q.second.second;
+//     pair<int,pair<int,int>> q= {1,{2,3}};
+//     cout<<q.first<<" "<<q.second.first<<" "<<q.second.second;
     
-    pair<int ,int >arr[] ={{1,2},{3,4},{5,6},{7,8}};
-    cout<<arr[1].second;
-}
+//     pair<int ,int >arr[] ={{1,2},{3,4},{5,6},{7,8}};
+//     cout<<arr[1].second;
+// }
 
 void explainvector()
 {
