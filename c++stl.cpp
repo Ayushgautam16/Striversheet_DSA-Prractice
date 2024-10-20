@@ -21,15 +21,32 @@
 // max_element() in C++ STL
 
 
+// algorithms
+// containers 
+// function
+// iterators
 
 #include <bits/stdc++.h>
 using namespace std;
+
+void print()
+{
+    cout<<"ayush gautam "<<endl;
+}
+int sum(int a, int b)
+{
+    return a + b;
+}
 int main()
 {
-    int a;
-    cin>>a;
-    cout <<a;
-    
+    print(); 
+
+   int s = sum(1, 2);
+   cout<<s<<endl;
+
+
+// here voide function not returning anythinginside the funtion where as in the int sum  function returns the sum of the two number
+
 
 
 
