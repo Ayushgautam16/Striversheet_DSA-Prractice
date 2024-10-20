@@ -241,14 +241,63 @@ void explainPriorityQueue(){
     pq.push(4);
     cout<<pq.top()<<" ";
     pq.pop();
+// here in pq basically all the operation works from the top pop push and pqq.top perform then the largest elmt will be going to  pop out from the queue
+
+
+
 
 }
+
+void explainSet(){
+    // it stores elmt int he sorted order and stores the unique value each time
+
+    set<int> s;
+    s.insert(1);
+    s.insert(2);
+    s.insert(3);
+    s.insert(3);
+    s.insert(4);
+
+
+    auto it = s.find(3);
+    if(it!= s.end()){
+
+        
+
+
+    }
+
+
+
+
+
+}
+
+void multiplySet(){
+
+    set<int> s1 = {1,2,3};
+    set<int> s2 = {3,4,5};
+    set<int> s3;
+    for(auto x : s1){
+        for(auto y : s2){
+            s3.insert(x*y);
+        }
+    }
+    for(auto x : s3){
+        cout<<x<<" ";
+    }
+
+}
+
+void explainUnorderset(){
+    // it stores elmt in unsorted order and stores the unique value each time
+}
 int main(){
-    explainPair();
+    // explainPair();
     
-   explainPriorityQueue();
+  explainPriorityQueue();
 
-
+ explainSet();
 
 
 
