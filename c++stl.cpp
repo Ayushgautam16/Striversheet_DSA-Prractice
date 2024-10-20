@@ -22,36 +22,61 @@
 
 
 // algorithms
-// containers 
+// containers  1.
 // function
 // iterators
 
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// void print()
+// {
+//     cout<<"ayush gautam "<<endl;
+// }
+// int sum(int a, int b)
+// {
+//     return a + b;
+// }
+
+
+
+
+// int main()
+// {
+// //     print(); 
+
+// //    int s = sum(1, 2);
+// //    cout<<s<<endl;
+// // here voide function not returning anythinginside the funtion where as in the int sum  function returns the sum of the two number
+
+
+//     return 0;
+// }
+
+
+
+
+// pair
 #include <bits/stdc++.h>
 using namespace std;
-
-void print()
+void explainPair()
 {
-    cout<<"ayush gautam "<<endl;
+    pair<int, int> p= {1,2};
+    cout<<p.first<<" "<<p.second;
+
+    pair<int,pair<int,int>> q= {1,{2,3}};
+    cout<<q.first<<" "<<q.second.first<<" "<<q.second.second;
+    
+    pair<int ,int >arr[] ={{1,2},{3,4},{5,6},{7,8}};
+    cout<<arr[1].second;
 }
-int sum(int a, int b)
-{
-    return a + b;
-}
-int main()
-{
-    print(); 
-
-   int s = sum(1, 2);
-   cout<<s<<endl;
-
-
-// here voide function not returning anythinginside the funtion where as in the int sum  function returns the sum of the two number
-
-
-
+int main(){
+    explainPair();
+    
 
 
 
 
     return 0;
+
 }
