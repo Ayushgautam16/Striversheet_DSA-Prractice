@@ -67,45 +67,97 @@
 // }
        
 
-// count of num problem (optimal approach)
+// // count of num problem (optimal approach)
+// #include <iostream>
+// #include <cmath>
+// #include <algorithm>
+// using namespace std;
+
+
+
+// // Calculate the count of digits in 'n'
+// // using logarithmic operation log10(n) + 1.
+// int countDigits(int n){
+//     // Initialize a variable 'cnt' to
+//     // store the count of digits.
+//     int cnt = (int)(log10(n)+1);
+
+//     // The expression (int)(log10(n)+1)
+//     // calculates the number of digits in 'n'
+//     // and casts it to an integer.
+    
+//     // Adding 1 to the result accounts
+//     // for the case when 'n' is a power of 10,
+//     // ensuring that the count is correct.
+   
+//     // Finally, the result is cast
+//     // to an integer to ensure it is rounded
+//     // down to the nearest whole number.
+    
+//     // Return the count of digits in 'n'.
+//     return cnt;
+// }
+
+
+
+
+// int main() {
+//     int N = 329823;
+//     cout << "N: "<< N << endl;
+//     int digits = countDigits(N);
+//     cout << "Number of Digits in N: "<< digits << endl;
+//     return 0;
+// }
+     
+
+
 #include <iostream>
-#include <cmath>
 #include <algorithm>
+
 using namespace std;
 
-
-
-// Calculate the count of digits in 'n'
-// using logarithmic operation log10(n) + 1.
-int countDigits(int n){
-    // Initialize a variable 'cnt' to
-    // store the count of digits.
-    int cnt = (int)(log10(n)+1);
-
-    // The expression (int)(log10(n)+1)
-    // calculates the number of digits in 'n'
-    // and casts it to an integer.
-    
-    // Adding 1 to the result accounts
-    // for the case when 'n' is a power of 10,
-    // ensuring that the count is correct.
-   
-    // Finally, the result is cast
-    // to an integer to ensure it is rounded
-    // down to the nearest whole number.
-    
-    // Return the count of digits in 'n'.
-    return cnt;
+int findGcd(int a, int b) {
+    // Continue loop as long as both
+    // a and b are greater than 0
+    while(a > 0 && b > 0) {
+        // If a is greater than b,
+        // subtract b from a and update a
+        if(a > b) {
+             // Update a to the remainder
+             // of a divided by b
+            a = a % b;
+        }
+        // If b is greater than or equal
+        // to a, subtract a from b and update b
+        else {
+            // Update b to the remainder
+            // of b divided by a
+            b = b % a; 
+        }
+    }
+    // Check if a becomes 0,
+    // if so, return b as the GCD
+    if(a == 0) {
+        return b;
+    }
+    // If a is not 0,
+    // return a as the GCD
+    return a;
 }
 
 
 
 
 int main() {
-    int N = 329823;
-    cout << "N: "<< N << endl;
-    int digits = countDigits(N);
-    cout << "Number of Digits in N: "<< digits << endl;
+    int n1 = 20, n2 = 15;
+    
+    // Find the GCD of n1 and n2
+    int gcd = findGcd(n1, n2);
+
+    cout << "GCD of " << n1 << " and " << n2 << " is: " << gcd << endl;
+
     return 0;
 }
-     
+
+
+
