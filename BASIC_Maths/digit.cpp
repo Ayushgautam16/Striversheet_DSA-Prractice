@@ -34,7 +34,7 @@ int countDigit(int n){
 
 
 
-int main(){
+// int main(){
     // int num;
     // cout << "Enter a number: ";
     // cin >> num;
@@ -42,7 +42,7 @@ int main(){
     // return 0;
     // optimal solution for qustion using logrithmic  log10(n)
     // also the time complexity of the question
-}
+// }
 
 
 
