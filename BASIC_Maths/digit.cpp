@@ -38,7 +38,7 @@ int main(){
     int num;
     cout << "Enter a number: ";
     cin >> num;
-    cout << "Number of digits: " << countDigit(num) << endl;
+    // cout << "Number of digits: " << countDigit(num) << endl;
     // return 0;
     // optimal solution for qustion using logrithmic  log10(n)
     // also the time complexity of the question
