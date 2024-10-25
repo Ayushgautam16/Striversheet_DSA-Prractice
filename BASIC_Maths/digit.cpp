@@ -36,7 +36,7 @@ int countDigit(int n){
 
 int main(){
     int num;
-    cout << "Enter a number: ";
+    // cout << "Enter a number: ";
     // cin >> num;
     // cout << "Number of digits: " << countDigit(num) << endl;
     // return 0;
