@@ -27,7 +27,7 @@ int countDigit(int n){
     int count = 0;
     // while (n!= 0) {
         n /= 10;
-        ++count;
+        // ++count;
     }
     // return count;
 // }
