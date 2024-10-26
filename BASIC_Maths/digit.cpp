@@ -30,7 +30,7 @@ int countDigit(int n){
         ++count;
     }
     return count;
-}
+// }
 
 
 
