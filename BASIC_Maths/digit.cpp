@@ -29,7 +29,7 @@ int countDigit(int n){
         n /= 10;
         ++count;
     }
-    return count;
+    // return count;
 // }
 
 
