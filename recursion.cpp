@@ -4,7 +4,7 @@ int cnt = 0;
 
 void print(){
    
-   // Base Condition.
+
    if(cnt == 3)  return;
    cout<<cnt<<endl;
 
