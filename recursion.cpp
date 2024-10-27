@@ -36,7 +36,7 @@ void func(int i, int n){
 
 int main(){
   
-  // Here, let’s take the value of n to be 4.
+  
   int n = 4;
   func(1,n);
   return 0;
