@@ -30,7 +30,7 @@ void func(int i, int n){
    cout<<"Raj"<<endl;
 
    // Function call to print till i increments.
-   func(i+1,n);
+  //  func(i+1,n);
 
 }
 
