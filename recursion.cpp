@@ -18,7 +18,7 @@
 //     print();
 //   return 0;
 // }
-
+#base condition 
 
 #include<bits/stdc++.h>
 using namespace std;
