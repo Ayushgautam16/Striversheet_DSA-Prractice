@@ -29,16 +29,16 @@ void func(int i, int n){
    if(i>n) return;
    cout<<"Raj"<<endl;
 
-   // Function call to print till i increments.
-  //  func(i+1,n);
+   Function call to print till i increments.
+   func(i+1,n);
 
-}
+// }
 
-int main(){
+// int main(){
   
   
   int n = 4;
   func(1,n);
   return 0;
 
-}
+// }
