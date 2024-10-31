@@ -1,44 +1,45 @@
+// // #include<bits/stdc++.h>
+// // using namespace std;
+// // int cnt = 0;
+
+// // void print(){
+   
+// // #git commit
+// //    if(cnt == 3)  return;
+// //    cout<<cnt<<endl;
+// // #cmd 
+
+// //    cnt++;
+// //    print();
+
+// // }
+
+// // int main(){
+// //     print();
+// //   return 0;
+// // }
+// // #base condition 
+
 // #include<bits/stdc++.h>
 // using namespace std;
-// int cnt = 0;
 
-// void print(){
+// void func(int i, int n){
    
+//    // Base Condition.
+//    if(i>n) return;
+//    cout<<"Raj"<<endl;
 
-//    if(cnt == 3)  return;
-//    cout<<cnt<<endl;
+//   //  Function call to print till i increments.
+//    func(i+1,n);
 
-
-//    cnt++;
-//    print();
-
-// }
+// // }
 
 // int main(){
-//     print();
+  
+  
+//   int n = 4;
+//   func(1,n);
 //   return 0;
-// }
-
-
-#include<bits/stdc++.h>
-using namespace std;
-
-void func(int i, int n){
-   
-   // Base Condition.
-   if(i>n) return;
-   cout<<"Raj"<<endl;
-
-   Function call to print till i increments.
-   func(i+1,n);
 
 // }
-
-// int main(){
-  
-  
-  int n = 4;
-  func(1,n);
-  return 0;
-
 // }
