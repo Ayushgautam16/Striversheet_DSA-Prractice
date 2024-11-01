@@ -1,6 +1,6 @@
-class Solution {
-public:
-    string makeFancyString(string s) 
+// class Solution {
+// public:
+//     string makeFancyString(string s) 
     // {
     //     int n;
     //     string ans;
