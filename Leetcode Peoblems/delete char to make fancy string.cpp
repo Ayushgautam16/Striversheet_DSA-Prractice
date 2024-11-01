@@ -16,3 +16,15 @@
 //         return ans;
 //     }
 // };
+
+// # include <iostream>
+// using namespace std ;
+// int main(){
+//     Solution s;
+//     cout << s.makeFancyString("leetcode") << endl; // Output: "leeetcoo"
+//     cout << s.makeFancyString("abbbaccc") << endl; // Output: "aaabbbcc"
+//     return 0;
+//     return 0;
+//     // Your code here
+//     cout<<s. front of the solution of the cam << endl;
+// }
