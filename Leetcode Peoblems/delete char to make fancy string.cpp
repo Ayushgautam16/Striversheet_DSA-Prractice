@@ -1,9 +1,9 @@
 class Solution {
 public:
     string makeFancyString(string s) 
-    {
-        int n;
-        string ans;
+    // {
+    //     int n;
+    //     string ans;
         // for(auto &ch:s)
         // {
             // n = ans.size();
