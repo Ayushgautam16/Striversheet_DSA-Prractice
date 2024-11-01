@@ -10,9 +10,9 @@ public:
             if(n > 1 and ans.back() == ch and ans.back() == ans[n - 2])
             {
                 continue;
-            }
-            ans += ch;
-        }
+        //     }
+        //     ans += ch;
+        // }
 //         return ans;
 //     }
 // };
