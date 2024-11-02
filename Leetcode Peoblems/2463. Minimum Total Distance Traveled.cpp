@@ -35,7 +35,13 @@
 # include <iostream>
 using namespace std;
 void recursion (int a,b){
+    if (a==0) return;
+    recursion(a-1,b);
+    cout << b << " ";
+    return;
 
+        command 
+}
 int main (){
     int 
 }
