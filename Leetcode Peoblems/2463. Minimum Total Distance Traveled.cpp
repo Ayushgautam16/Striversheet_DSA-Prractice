@@ -39,9 +39,8 @@ void recursion (int a,b){
     recursion(a-1,b);
     cout << b << " ";
     return;
-
-        command 
+    
 }
 int main (){
-    int 
+    
 }
