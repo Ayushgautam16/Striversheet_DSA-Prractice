@@ -22,7 +22,7 @@ int main()
 {
     if(Amstrong())
         cout << "The number is an Armstrong number.";
-    else
+    // else
         // cout << "The number is not an Armstrong number.";
     // return 0;
 }
