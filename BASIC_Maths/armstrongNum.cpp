@@ -20,8 +20,8 @@ int Amstrong(){
 }
 int main()
 {
-    if(Amstrong())
-        cout << "The number is an Armstrong number.";
+    // if(Amstrong())
+    //     cout << "The number is an Armstrong number.";
     // else
         // cout << "The number is not an Armstrong number.";
     // return 0;
