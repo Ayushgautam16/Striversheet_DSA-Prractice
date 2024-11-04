@@ -21,7 +21,7 @@
 
 // program to print count of digits 
 // #include<iostream>
-using namespace std;
+// using namespace std;
 
 // int countDigit(int n){
     // int count = 0;
