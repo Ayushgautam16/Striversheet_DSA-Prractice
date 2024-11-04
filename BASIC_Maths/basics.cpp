@@ -73,7 +73,7 @@ int main()
 {   
     // Here, we have taken the value of N as 5.
     // We can also take input from the user.
-    int N = 5;
+    // int N = 5;
 
     pattern1(N);
 
