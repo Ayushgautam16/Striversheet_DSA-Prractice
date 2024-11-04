@@ -75,7 +75,7 @@ int main()
     // We can also take input from the user.
     // int N = 5;
 
-    pattern1(N);
+    // pattern1(N);
 
     return 0;
 }
