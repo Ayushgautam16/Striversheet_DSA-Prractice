@@ -1,5 +1,6 @@
 // 2914. Minimum Number of Changes to Make Binary String Beautiful
 #include <iostream>
+using namespace std;
 class Solution {
 public:
     int minChanges(string s) {
