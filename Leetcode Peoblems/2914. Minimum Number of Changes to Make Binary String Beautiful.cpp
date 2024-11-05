@@ -1,5 +1,5 @@
 // 2914. Minimum Number of Changes to Make Binary String Beautiful
-#include
+#include <iostream>
 class Solution {
 public:
     int minChanges(string s) {
