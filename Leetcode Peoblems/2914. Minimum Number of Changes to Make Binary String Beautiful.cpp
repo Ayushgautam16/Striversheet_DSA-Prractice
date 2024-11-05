@@ -21,3 +21,6 @@
 
 //     return 0;
 // }
+
+
+// class based solution for the leetcode also
