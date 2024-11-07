@@ -2,7 +2,7 @@
 // #include<bits/stdc++.h>
 // using namespace std;
 
-int isPrime(int num){
+// int isPrime(int num){
     if(num <= 1)
         return false;
     for(int i = 2; i <= sqrt(num); i++){
