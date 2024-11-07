@@ -1,6 +1,6 @@
 // check num is prime or not 
-#include<bits/stdc++.h>
-using namespace std;
+// #include<bits/stdc++.h>
+// using namespace std;
 
 int isPrime(int num){
     if(num <= 1)
