@@ -10,8 +10,8 @@
             // return false;
     // }
     // return true;
-}
-int main(){
+// }
+// int main(){
     int n;
     cout << "Enter a number: ";
     cin >> n;
