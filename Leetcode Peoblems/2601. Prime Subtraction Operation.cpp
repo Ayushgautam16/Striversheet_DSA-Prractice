@@ -39,4 +39,10 @@ public:
                     continue;
                 else
                     return false;
+                               }
+            nums[i] -= primes[lb];
+        }
+        return true;
+    }
+};
  
