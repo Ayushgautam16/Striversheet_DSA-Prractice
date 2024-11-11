@@ -29,4 +29,7 @@ public:
         // Greedy: Try minimizing each value
         for (int i = 0; i < nums.size(); ++i) {
             int diff = i == 0 ? nums[0] - 1 : nums[i] - nums[i - 1] - 1;
-         
+            int lb = lower_bound(primes.begin(), primes.end(), diff) -
+                     primes.begin();
+
+        
