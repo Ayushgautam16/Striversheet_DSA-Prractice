@@ -36,4 +36,7 @@ public:
                 lb--;
             if (lb < 0) {
                 if (i == 0 or nums[i] > nums[i - 1])
-        
+                    continue;
+                else
+                    return false;
+ 
