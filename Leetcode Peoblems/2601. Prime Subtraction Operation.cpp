@@ -17,4 +17,14 @@ class Solution {
         }
         for (int i = 2; i < maxVal; ++i)
             if (sieve[i] == false)
+                primes.push_back(i);
+    }
+
+public:
+    bool primeSubOperation(vector<int>& nums) {
+        vector<int> primes;
+        int maxVal = *max_element(nums.begin(), nums.end());
+        sieveOfEratosthenes(primes, maxVal);
+
+        // Greedy: Try minimizing each value
      
