@@ -45,4 +45,13 @@ public:
         return true;
     }
 };
+
+int main() {
+
+    Solution sol;
+    vector<int> nums = {1, 2, 3, 4, 5};
+    cout << sol.primeSubOperation(nums) << endl; // Output: true
+
+    return 0;
+}
  
