@@ -32,4 +32,8 @@ public:
             int lb = lower_bound(primes.begin(), primes.end(), diff) -
                      primes.begin();
 
+            if (lb == primes.size() or primes[lb] > diff)
+                lb--;
+            if (lb < 0) {
+                if (i == 0 or nums[i] > nums[i - 1])
         
