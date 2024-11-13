@@ -10,4 +10,5 @@ public:
             auto low = lower_bound(v.begin() + i + 1, v.end(), lower - v[i]);
             ans += (up - low);
         }
+        return ans;
  
