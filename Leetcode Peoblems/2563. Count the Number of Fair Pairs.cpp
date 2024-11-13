@@ -6,4 +6,6 @@ public:
         sort(v.begin(), v.end());
 
         for (int i = 0; i < v.size() - 1; i++) {
-   
+            auto up = upper_bound(v.begin() + i + 1, v.end(), upper - v[i]);
+            auto low = lower_bound(v.begin() + i + 1, v.end(), lower - v[i]);
+       
