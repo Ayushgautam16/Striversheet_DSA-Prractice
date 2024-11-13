@@ -11,4 +11,5 @@ public:
             ans += (up - low);
         }
         return ans;
- 
+    }
+};
