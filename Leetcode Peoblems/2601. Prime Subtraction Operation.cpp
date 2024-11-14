@@ -46,12 +46,12 @@ public:
     }
 };
 
-int main() {
+// int main() {
 
-    Solution sol;
-    vector<int> nums = {1, 2, 3, 4, 5};
-    cout << sol.primeSubOperation(nums) << endl; // Output: true
+//     Solution sol;
+//     vector<int> nums = {1, 2, 3, 4, 5};
+//     cout << sol.primeSubOperation(nums) << endl; // Output: true
 
-    return 0;
-}
+//     return 0;
+// }
  
