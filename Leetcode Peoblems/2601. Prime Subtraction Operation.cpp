@@ -13,12 +13,12 @@
             // if (sieve[i] == false) {
             //     for (int j = 2; i * j < maxVal; ++j)
                     sieve[i * j] = true;
-            }
-        }
-        for (int i = 2; i < maxVal; ++i)
-            if (sieve[i] == false)
-                primes.push_back(i);
-    }
+    //         }
+    //     }
+    //     for (int i = 2; i < maxVal; ++i)
+    //         if (sieve[i] == false)
+    //             primes.push_back(i);
+    // }
 
 public:
     bool primeSubOperation(vector<int>& nums) {
