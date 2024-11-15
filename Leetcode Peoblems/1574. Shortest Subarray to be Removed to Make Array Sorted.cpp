@@ -8,4 +8,7 @@ public:
         while (r > l && arr[r - 1] <= arr[r]) --r;
         int res = min(n - l - 1, r);
         for (int i{0}, j = r; i <= l && j < n; ) 
-     
+            arr[i] <= arr[j] ? res = min(res, j - i++ - 1) : ++j;
+        return res;
+    }
+};
