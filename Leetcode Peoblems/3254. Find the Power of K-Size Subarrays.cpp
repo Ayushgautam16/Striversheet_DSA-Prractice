@@ -23,4 +23,16 @@ public:
          while (j < n) {
             if (nums[j] == nums[j - 1] + 1) {
                 conseCnt++;
-    
+            } else {
+                conseCnt = 1;
+            }
+            if (conseCnt >= k) {
+                ans[i] = nums[j];
+            }
+
+            j++;
+            i++;
+        }
+        return ans;
+    }
+};
