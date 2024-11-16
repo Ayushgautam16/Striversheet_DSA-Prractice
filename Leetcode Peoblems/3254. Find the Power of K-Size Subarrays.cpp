@@ -13,5 +13,7 @@ public:
                 conseCnt = 1;
             }
         }
+  if (conseCnt == k) {
+            ans[0] = nums[k - 1];
 
       
