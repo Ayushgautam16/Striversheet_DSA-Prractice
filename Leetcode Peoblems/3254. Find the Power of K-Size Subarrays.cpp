@@ -20,4 +20,7 @@ public:
         int i = 1;
         int j = k;
      
-      
+         while (j < n) {
+            if (nums[j] == nums[j - 1] + 1) {
+                conseCnt++;
+    
