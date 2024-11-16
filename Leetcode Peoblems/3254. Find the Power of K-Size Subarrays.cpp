@@ -15,5 +15,9 @@ public:
         }
   if (conseCnt == k) {
             ans[0] = nums[k - 1];
+        }
 
+        int i = 1;
+        int j = k;
+     
       
