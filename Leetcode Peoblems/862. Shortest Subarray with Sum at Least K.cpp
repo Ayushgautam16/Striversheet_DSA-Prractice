@@ -16,4 +16,8 @@ public:
                     if(nums[i]+nums[a]<0){
                         nums[i]+=nums[a];//adding negatives back
                         nums[a]=0;
-                    
+                    }else{
+                        nums[a]+=nums[i];//last one
+                        nums[i]=0;
+                    }
+                
