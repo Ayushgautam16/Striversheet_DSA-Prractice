@@ -1,57 +1,34 @@
-// 2601. Prime Subtraction Operation
-
-// #include <iostream>
-// #include <vector>
-// #include <algorithm>
-
-// using namespace std;
-// class Solution {
-    // void sieveOfEratosthenes(vector<int>& primes, int maxVal) {
-    //     bool sieve[maxVal + 1];
-        // memset(sieve, false, sizeof(sieve));
-        // for (int i = 2; i * i < maxVal; ++i) {
-            // if (sieve[i] == false) {
-            //     for (int j = 2; i * j < maxVal; ++j)
-                    // sieve[i * j] = true;
-    //         }
-    //     }
-    //     for (int i = 2; i < maxVal; ++i)
-    //         if (sieve[i] == false)
-    //             primes.push_back(i);
-    // }
-
+class Solution {
 public:
-    bool primeSubOperation(vector<int>& nums) {
-        vector<int> primes;
-        int maxVal = *max_element(nums.begin(), nums.end());
-        sieveOfEratosthenes(primes, maxVal);
-
-        // Greedy: Try minimizing each value
-        for (int i = 0; i < nums.size(); ++i) {
-            int diff = i == 0 ? nums[0] - 1 : nums[i] - nums[i - 1] - 1;
-            int lb = lower_bound(primes.begin(), primes.end(), diff) -
-                     primes.begin();
-
-            if (lb == primes.size() or primes[lb] > diff)
-                lb--;
-            if (lb < 0) {
-                if (i == 0 or nums[i] > nums[i - 1])
-                    continue;
-                else
-                    return false;
-                               }
-            nums[i] -= primes[lb];
+    int shortestSubarray(vector<int>& nums, int k) {
+        int s=0,j=0,m=INT_MAX;
+        for(int i=0;i<nums.size();i++){
+            s+=nums[i];
+            if(s<0){
+                s=0;
+                j=i+1;
+            }
+            if(nums[i]<0&&s>0){
+                int a=i-1;
+                while(a>=j&&nums[i]<0){
+                    if(nums[i]+nums[a]<0){
+                        nums[i]+=nums[a];//adding negatives back
+                        nums[a]=0;
+                    }else{
+                        nums[a]+=nums[i];//last one
+                        nums[i]=0;
+                    }
+                    a--;
+                }
+            }
+            while(s>=k){
+            m=min(m,i-j);
+                s-=nums[j];
+                j++;
+            }
         }
-        return true;
+        if(m==INT_MAX)
+        return -1;
+        return m+1;
     }
 };
-
-// int main() {
-
-//     Solution sol;
-//     vector<int> nums = {1, 2, 3, 4, 5};
-//     cout << sol.primeSubOperation(nums) << endl; // Output: true
-
-//     return 0;
-// }
- 
