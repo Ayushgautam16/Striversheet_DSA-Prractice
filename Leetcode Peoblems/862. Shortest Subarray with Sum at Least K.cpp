@@ -12,4 +12,8 @@ public:
             }
             if(nums[i]<0&&s>0){
                 int a=i-1;
-               
+               while(a>=j&&nums[i]<0){
+                    if(nums[i]+nums[a]<0){
+                        nums[i]+=nums[a];//adding negatives back
+                        nums[a]=0;
+                    
