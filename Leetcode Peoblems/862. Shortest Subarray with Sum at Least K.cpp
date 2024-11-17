@@ -8,3 +8,4 @@ public:
             if(s<0){
                 s=0;
                 j=i+1;
+                
