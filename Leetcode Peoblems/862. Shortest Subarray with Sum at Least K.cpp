@@ -8,4 +8,8 @@ public:
             if(s<0){
                 s=0;
                 j=i+1;
-                
+             
+            }
+            if(nums[i]<0&&s>0){
+                int a=i-1;
+               
