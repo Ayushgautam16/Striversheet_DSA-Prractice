@@ -34,4 +34,10 @@ public:
                     sum += nums[j];
                     cout<<nums[j]<<" ";
                 }
-      
+                cout<<endl;
+            }
+            ans[i - n] = sum;
+        }
+        return ans;
+    }
+};
