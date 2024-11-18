@@ -24,4 +24,8 @@ public:
                 {
                     sum += nums[j];
                     cout<<nums[j]<<" ";
-             
+                }
+                cout<<endl;
+            }
+            else
+          
