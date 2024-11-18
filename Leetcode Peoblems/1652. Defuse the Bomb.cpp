@@ -14,3 +14,14 @@ public:
         auto nums = code;
         addNums(nums, code);
         addNums(nums, code);
+        
+        for(int i = n; i < n + n; i++)
+        {
+            int sum = 0;
+            if(k < 0)
+            {
+                for(int j = i - 1; j >= i - -k; j--)
+                {
+                    sum += nums[j];
+                    cout<<nums[j]<<" ";
+             
