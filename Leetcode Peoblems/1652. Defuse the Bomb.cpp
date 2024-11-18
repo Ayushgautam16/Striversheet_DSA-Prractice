@@ -29,4 +29,9 @@ public:
             }
             else
             {
-           
+                for(int j = i + 1; j <= i + k; j++)
+                {
+                    sum += nums[j];
+                    cout<<nums[j]<<" ";
+                }
+      
