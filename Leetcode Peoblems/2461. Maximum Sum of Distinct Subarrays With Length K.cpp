@@ -13,4 +13,5 @@ public:
             // If the window size exceeds 'k', slide the window
             if (i >= k) {
                int le = nums[i - k];
-        
+                mp[le]--;
+       
