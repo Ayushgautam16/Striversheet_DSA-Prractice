@@ -18,4 +18,14 @@ public:
                 if (mp[le] == 0) {
                     mp.erase(le);
                 }
-        
+            }
+
+            // Check if the window has exactly 'k' distinct elements
+            if (i >= k - 1 && mp.size() == k) {
+                mx = max(mx, ws);
+            }
+        }
+
+        return mx;
+    }
+}; 
