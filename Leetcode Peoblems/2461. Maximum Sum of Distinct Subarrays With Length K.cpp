@@ -16,4 +16,6 @@ public:
                 mp[le]--;
                 ws -= le;
                 if (mp[le] == 0) {
-          
+                    mp.erase(le);
+                }
+        
