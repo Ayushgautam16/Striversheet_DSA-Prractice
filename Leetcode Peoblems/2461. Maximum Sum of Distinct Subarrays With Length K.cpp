@@ -11,4 +11,5 @@ public:
             ws += nums[i];
 
             // If the window size exceeds 'k', slide the window
-           
+            if (i >= k) {
+     
