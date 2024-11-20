@@ -9,4 +9,7 @@ public:
         if (any_of(freq, freq+3, [k](int f){ return f<k;}))
             return -1;
     //    print(freq);
+        int ans=n;
+        for(int l=0, r=0; r<n; r++){
+            int x=s[r]-'a';
    
