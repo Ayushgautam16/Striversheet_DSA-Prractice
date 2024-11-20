@@ -12,4 +12,8 @@ public:
         int ans=n;
         for(int l=0, r=0; r<n; r++){
             int x=s[r]-'a';
-   
+            freq[x]--;
+            while (l<=r && any_of(freq, freq+3, [k](int f){ return f<k;})){
+                freq[s[l]-'a']++;
+                l++;
+  
