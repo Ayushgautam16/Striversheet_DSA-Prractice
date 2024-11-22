@@ -4,3 +4,5 @@ class Solution {
 public:
     string f(auto& v) {
 //         string r;
+        for (auto x : v)
+ 
