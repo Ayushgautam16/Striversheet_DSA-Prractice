@@ -2,3 +2,5 @@
 
 class Solution {
 public:
+    string f(auto& v) {
+//         string r;
