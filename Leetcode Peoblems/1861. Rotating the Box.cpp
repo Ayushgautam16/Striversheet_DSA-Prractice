@@ -26,4 +26,16 @@ public:
         int n = box.size(), m = box[0].size();
         for(auto &Box:box) swapChar(Box);
 
-        
+        vector<vector<char>>box90;
+        for(int i = m - 1; i >= 0; i--)
+        {
+            vector<char>temp;
+            for(int j = n - 1; j >= 0; j--)
+                temp.push_back(box[j][i]);
+            box90.push_back(temp);
+        }
+
+        reverse(begin(box90), end(box90));
+        return box90;
+    }
+};
