@@ -11,4 +11,10 @@ public:
                 int tmp = matrix[i][j];
                 sum += abs(tmp);
                 minus = min(minus, abs(tmp));
-                
+                if(tmp < 0) amt++;
+            }
+        }
+        if(amt%2) return sum-minus*2;
+        return sum;
+    }
+};
