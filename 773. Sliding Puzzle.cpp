@@ -32,4 +32,16 @@ class Solution {
           const int swappedIndex = x * n + y;
           swap(s[zeroIndex], s[swappedIndex]);
           
-    
+    if (s == goal)
+            return step;
+          if (!seen.contains(s)) {
+            q.push(s);
+            seen.insert(s);
+          }
+          swap(s[zeroIndex], s[swappedIndex]);
+        }
+      }
+
+    return -1;
+  }
+};
