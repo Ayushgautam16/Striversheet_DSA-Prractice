@@ -26,4 +26,12 @@ public:
             adj[i].first=i;
             adj[i].second.push_back(i+1);
         }
-        1
+        vector<int>ans;
+        for(int i=0;i<queries.size();i++){
+            adj[queries[i][0]].second.push_back(queries[i][1]);
+            int shortest=findshortest(adj,0,n-1,n);
+            ans.push_back(shortest);
+        }    
+        return ans;
+    }
+};
