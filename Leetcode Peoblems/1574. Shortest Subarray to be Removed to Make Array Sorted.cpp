@@ -1,5 +1,5 @@
 // 1574. Shortest Subarray to be Removed to Make Array Sorted
-class Solution {
+// class Solution {
 public:
     int findLengthOfShortestSubarray(vector<int>& arr) {
         int n = arr.size(), l{0}, r = n - 1;
