@@ -7,7 +7,7 @@
 
     //    for (int i = 0; i < n; i++) {
             // Add the current element to the window
-            mp[nums[i]]++;
+      //      mp[nums[i]]++;
             ws += nums[i];
 
             // If the window size exceeds 'k', slide the window
