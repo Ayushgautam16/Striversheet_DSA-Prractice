@@ -39,4 +39,11 @@ public:
                 int new_row = row + dir[j];
                 int new_col = col + dir[j + 1];
 
-                
+                if (new_row < 0 || new_row >= m || new_col < 0 || new_col >= n)
+                    continue;
+
+                int val = new_row * n + new_col;
+                if (visited[val] != -1)
+                    continue;
+
+               
