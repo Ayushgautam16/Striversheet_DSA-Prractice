@@ -46,4 +46,16 @@ public:
                 if (visited[val] != -1)
                     continue;
 
-               
+                if (grid[new_row][new_col] <= t + 1)
+                    visited[val] = t + 1;
+                else if ((t + 1) % 2 != grid[new_row][new_col] % 2)
+                    visited[val] = grid[new_row][new_col] + 1;
+                else
+                    visited[val] = grid[new_row][new_col];
+                q.push({visited[val], val});
+            }
+        }
+
+        return -1;
+    }
+};
