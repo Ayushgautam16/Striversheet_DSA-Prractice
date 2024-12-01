@@ -11,4 +11,6 @@ public:
                 if(i != j and arr[j]*2 == arr[i]) 
                     return true;
         }
-        
+        return false;
+    }
+};
