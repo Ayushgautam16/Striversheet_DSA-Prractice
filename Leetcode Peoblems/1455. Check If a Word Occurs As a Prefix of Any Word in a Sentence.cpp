@@ -15,4 +15,7 @@ public:
             if(word.compare(0, searchWord.size(), searchWord) == 0){
                 return cnt;
             }
-     
+        }
+        return -1;
+    }
+};
