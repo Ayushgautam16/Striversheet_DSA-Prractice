@@ -4,4 +4,7 @@ class Solution {
 public:
     string addSpaces(string s, vector<int>& spaces) 
     {
+        string ans;
+        int i = 0, j = 0;
+        int n = s.size(), m = spaces.size();
         
