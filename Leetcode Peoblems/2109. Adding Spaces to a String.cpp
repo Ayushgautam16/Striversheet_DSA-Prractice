@@ -13,4 +13,7 @@ public:
                 ans += ' ', j++;
             ans += s[i++];
         }
-        
+        while(i < n) ans += s[i++];
+        return ans;
+    }
+};
