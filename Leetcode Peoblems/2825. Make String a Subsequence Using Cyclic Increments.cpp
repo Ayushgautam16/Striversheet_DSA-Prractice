@@ -15,13 +15,4 @@ public:
         {
             if(ch == str2[idx])
             {
-                subStr += str2[idx++];
-                continue;
-            }
-
-            convertChar(ch);
-            if(ch == str2[idx]) subStr += str2[idx++];
-        }
-        return str2 == subStr;
-    }
-};
+            
