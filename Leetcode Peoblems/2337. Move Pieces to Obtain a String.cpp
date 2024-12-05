@@ -29,4 +29,7 @@ public:
             {
                 while(cur < n)
                 {
-                    
+                    if(start[cur] == 'L') return false;
+                    if(start[cur] == '_')
+                    {
+                        
