@@ -35,10 +35,4 @@ public:
                        swap(start[i], start[cur++]);
                         break;
                     }
-                    cur++;
-                }
-            }
-        }
-        return start == target;
-    }
-}; 
+                    
