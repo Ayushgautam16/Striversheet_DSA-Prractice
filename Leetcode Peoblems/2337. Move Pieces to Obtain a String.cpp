@@ -32,4 +32,13 @@ public:
                     if(start[cur] == 'L') return false;
                     if(start[cur] == '_')
                     {
-                        
+                       swap(start[i], start[cur++]);
+                        break;
+                    }
+                    cur++;
+                }
+            }
+        }
+        return start == target;
+    }
+}; 
