@@ -8,4 +8,13 @@ public:
         int sum=0;  //to check the sum exceed or not
         int i=1; //For the Range of number
         while(i<=n&&sum+i<=maxSum){
-       
+            if(ans.find(i)==ans.end()){
+                cout<<i<<endl;
+                count++;
+                sum+=i;
+            }
+            i++;
+        }
+        return count;
+    }
+};1
