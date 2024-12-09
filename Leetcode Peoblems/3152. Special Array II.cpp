@@ -12,4 +12,13 @@ public:
 
         vector<bool> ans;
         for(auto querie : queries)
-        
+        {
+            int left = querie[0], right = querie[1];
+
+            auto it = store.upper_bound(left);
+            ans.push_back((*it <= right and it != store.end()) ? 0 : 1);
+        }
+
+        return ans;
+    }
+};
