@@ -16,4 +16,19 @@ public:
         return result;
     }
 private:
-    
+    int getOccurrence(const string& s, char c, int len) {
+        int occurrence = 0;
+        // slide the window with width `len`
+        for (int i = 0; (i + len) <= s.size(); i++) {
+            bool matched = true;
+            for (int j = 0; j < len; j++) {
+                if (s[i + j] != c) {
+                    matched = false;
+                    break;
+                }
+            }
+            if (matched) occurrence++;
+        }
+        return occurrence;
+    }
+};
