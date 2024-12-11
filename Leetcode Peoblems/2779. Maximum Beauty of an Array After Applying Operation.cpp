@@ -43,4 +43,5 @@ public:
 
         // Calculate maximum beauty
         for (int i = 0; i < range; i++) 
-        
+        {
+            
