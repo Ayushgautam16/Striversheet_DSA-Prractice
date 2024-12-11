@@ -44,4 +44,15 @@ public:
         // Calculate maximum beauty
         for (int i = 0; i < range; i++) 
         {
-            
+           current_beauty += freq[i];
+            max_beauty = std::max(max_beauty, current_beauty);
+            // If beauty reaches the length of nums, return
+            if (max_beauty == nums.size()) 
+            {
+                return max_beauty;
+            }
+        }
+        // Return result
+        return max_beauty;
+    }
+}; 
