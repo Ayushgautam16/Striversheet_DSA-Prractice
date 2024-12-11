@@ -42,4 +42,5 @@ public:
         int max_beauty = 0;
 
         // Calculate maximum beauty
+        for (int i = 0; i < range; i++) 
         
