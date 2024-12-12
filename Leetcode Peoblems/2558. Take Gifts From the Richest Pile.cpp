@@ -14,4 +14,10 @@ public:
             pq.pop();
             pq.push(sqrt(x));
         }
-        
+        while(!pq.empty()){
+            ans += pq.top();
+            pq.pop();
+        }
+        return ans;
+    }
+};
