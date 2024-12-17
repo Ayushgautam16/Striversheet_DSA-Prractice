@@ -17,4 +17,6 @@ public:
                 if (ans.size() && i == ans.back() - 'a' && cnt[i]) { // the character of our last batch still has some count left, so we only insert a single character in this batch
                     onlyOne = true;
                     continue;
-                
+                }
+                if (cnt[i]) break; // found a character with positive count, fill with this character
+           
