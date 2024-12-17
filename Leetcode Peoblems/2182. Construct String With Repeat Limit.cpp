@@ -19,4 +19,12 @@ public:
                     continue;
                 }
                 if (cnt[i]) break; // found a character with positive count, fill with this character
-           
+            }
+            if (i == -1) break; // no more characters to fill, break;
+            int fill = onlyOne ? 1 : min(cnt[i], limit);
+            cnt[i] -= fill;
+            while (fill--) ans += 'a' + i;
+        }
+        return ans;
+    }
+};
