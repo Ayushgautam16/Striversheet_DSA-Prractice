@@ -11,4 +11,10 @@ public:
         string ans;
         for (char c : s) cnt[c - 'a']++;
         while (true) {
-            
+            int i = 25;
+            bool onlyOne = false;
+            for (; i >= 0; --i) {
+                if (ans.size() && i == ans.back() - 'a' && cnt[i]) { // the character of our last batch still has some count left, so we only insert a single character in this batch
+                    onlyOne = true;
+                    continue;
+                
