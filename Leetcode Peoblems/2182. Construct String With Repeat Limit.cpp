@@ -5,3 +5,10 @@
 // Time: O(N)
 // Space: O(1)
 class Solution {
+public:
+    string repeatLimitedString(string s, int limit) {
+        int cnt[26] = {};
+        string ans;
+        for (char c : s) cnt[c - 'a']++;
+        while (true) {
+            
