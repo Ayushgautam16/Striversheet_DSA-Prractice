@@ -12,4 +12,12 @@ public:
 
             for (int j = i + 1; j < prices.size(); j++){
 
-                
+                if (prices[i] >= prices[j]){ //HERE, CHECK THE CONDITION GIVEN IN QUESTION
+
+                    int temp = prices[i] - prices[j];  
+                    ans.push_back(temp);
+                    flag = true; //MARK THE FLAG TRUE THAT WE GOT THE DISCOUNT
+                    break;
+
+                }
+            
