@@ -20,4 +20,13 @@ public:
                     break;
 
                 }
-            
+            }
+
+            if (!flag){ // IF FLAG IS STILL FALSE THEN INSERT HE VALUR GIVEN IN VECTOR AS NO DISCOUNT WILL BE GIVEN
+                ans.push_back(prices[i]);
+            }
+        }
+
+        return ans;
+    }
+};
