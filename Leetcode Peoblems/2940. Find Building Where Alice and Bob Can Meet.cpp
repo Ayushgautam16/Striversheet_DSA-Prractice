@@ -78,16 +78,4 @@ public:
             if((i == j) || (i < j && heights[i] < heights[j])){
                 ans[qi] = j;
                 continue;
-            }
-            if(j < i && heights[j] < heights[i]){
-                ans[qi] = i;
-                continue;
-            }
             
-            int index = obj -> query(max(i, j) + 1, n - 1, max(heights[i], heights[j]) + 1);
-            if(index < INF) ans[qi] = index;
-        }
-        
-        return ans;
-    }
-};
