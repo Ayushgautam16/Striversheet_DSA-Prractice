@@ -80,7 +80,7 @@ public:
                 continue;
             }
             if(j < i && heights[j] < heights[i]){
-                ans[qi] = i;
+                // ans[qi] = i;
                 // continue;
             // }
             
