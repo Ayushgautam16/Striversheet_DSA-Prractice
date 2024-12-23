@@ -85,8 +85,8 @@ public:
             }
             
             int index = obj -> query(max(i, j) + 1, n - 1, max(heights[i], heights[j]) + 1);
-            if(index < INF) ans[qi] = index;
-//         }
+//             if(index < INF) ans[qi] = index;
+// //         }
         
 //         return ans;
 //     }
