@@ -11,4 +11,8 @@ public:
                 charFrequency[j][character]++;
             }
         }
-        
+        return getWords(words, target, 0, 0, dp, charFrequency);
+    }
+
+private:
+    
