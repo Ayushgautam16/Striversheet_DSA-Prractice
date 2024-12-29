@@ -9,4 +9,6 @@ public:
             for (int j = 0; j < words[0].size(); j++) {
                 int character = words[i][j] - 'a';
                 charFrequency[j][character]++;
-            
+            }
+        }
+        
