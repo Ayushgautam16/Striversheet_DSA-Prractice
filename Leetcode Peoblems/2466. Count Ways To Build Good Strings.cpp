@@ -7,4 +7,10 @@ public:
 
         for (int i = 0; i <= high; i++) {
             if (dp[i] > 0) {
-                
+               if (i + zero <= high) {
+                    dp[i + zero] = (dp[i + zero] + dp[i]) % mod;
+                }
+                if (i + one <= high) {
+                    dp[i + one] = (dp[i + one] + dp[i]) % mod;
+                }
+            
