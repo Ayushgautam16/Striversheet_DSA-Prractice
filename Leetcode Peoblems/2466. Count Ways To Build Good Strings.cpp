@@ -5,4 +5,11 @@ public:
         vector<int> dp(high + 1, 0);
         dp[0] = 1; // Base case: 1 way to create an empty string.
 
-        
+        for (int i = 0; i <= high; i++) {
+            if (dp[i] > 0) {
+                if (i + zero <= high) {
+                    dp[i + zero] = (dp[i + zero] + dp[i]) % mod;
+                }
+                if (i + one <= high) {
+                    dp[i + one] = (dp[i + one] + dp[i]) % mod;
+                
