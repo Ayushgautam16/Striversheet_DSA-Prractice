@@ -17,4 +17,7 @@ class Solution {
 
             dp[i] = costs[0] + dp[i - 1];
             dp[i] = Math.min(dp[Math.max(0, i - 7)] + costs[1], dp[i]);
-            
+            dp[i] = Math.min(dp[Math.max(0, i - 30)] + costs[2], dp[i]);
+        }
+
+        
