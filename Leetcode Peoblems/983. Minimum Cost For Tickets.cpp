@@ -3,4 +3,5 @@ class Solution {
         int maxDay = days[days.length - 1];
         boolean[] travelDay = new boolean[maxDay + 1];
 
+        for (int day : days)
         
