@@ -20,4 +20,4 @@ class Solution {
             dp[i] = Math.min(dp[Math.max(0, i - 30)] + costs[2], dp[i]);
         }
 
-        
+        return dp[maxDay];
