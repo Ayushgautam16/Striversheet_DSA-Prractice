@@ -21,3 +21,5 @@ class Solution {
         }
 
         return dp[maxDay];
+    }
+}
