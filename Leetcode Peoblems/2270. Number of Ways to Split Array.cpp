@@ -1,4 +1,5 @@
 // 2270. Number of Ways to Split Array
+
 class Solution {
 public:
     int waysToSplitArray(vector<int>& nums) {
