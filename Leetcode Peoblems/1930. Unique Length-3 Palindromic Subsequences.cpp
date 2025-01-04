@@ -8,4 +8,19 @@ public:
             letters.insert(c);
         }
         
-        
+        int ans = 0;
+        for (char letter : letters) {
+            int i = -1;
+            int j = 0;
+            
+            for (int k = 0; k < s.size(); k++) {
+                if (s[k] == letter) {
+                    if (i == -1) {
+                        i = k;
+                    }
+                    
+                    j = k;
+                }
+            }
+            
+            
