@@ -1,37 +1,37 @@
-// 1930. Unique Length-3 Palindromic Subsequences
+// // 1930. Unique Length-3 Palindromic Subsequences
 
-class Solution {
-public:
-    int countPalindromicSubsequence(string s) {
-        unordered_set<char> letters;
-        for (char c : s) {
-            letters.insert(c);
-        }
+// class Solution {
+// public:
+//     int countPalindromicSubsequence(string s) {
+//         unordered_set<char> letters;
+//         for (char c : s) {
+//             letters.insert(c);
+//         }
         
-        int ans = 0;
-        for (char letter : letters) {
-            int i = -1;
-            int j = 0;
+//         int ans = 0;
+//         for (char letter : letters) {
+//             int i = -1;
+//             int j = 0;
             
-            for (int k = 0; k < s.size(); k++) {
-                if (s[k] == letter) {
-                    if (i == -1) {
-                        i = k;
-                    }
+//             for (int k = 0; k < s.size(); k++) {
+//                 if (s[k] == letter) {
+//                     if (i == -1) {
+//                         i = k;
+//                     }
                     
-                    j = k;
-                }
-            }
+//                     j = k;
+//                 }
+//             }
             
-            unordered_set<char> between;
-            for (int k = i + 1; k < j; k++) {
-                between.insert(s[k]);
-            }
+//             unordered_set<char> between;
+//             for (int k = i + 1; k < j; k++) {
+//                 between.insert(s[k]);
+//             }
             
-            ans += between.size();
-        }
+//             ans += between.size();
+//         }
         
-        return ans;
-    }
-};
+//         return ans;
+//     }
+// };
 
