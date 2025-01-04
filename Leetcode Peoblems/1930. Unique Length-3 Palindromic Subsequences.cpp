@@ -23,4 +23,15 @@ public:
                 }
             }
             
+            unordered_set<char> between;
+            for (int k = i + 1; k < j; k++) {
+                between.insert(s[k]);
+            }
             
+            ans += between.size();
+        }
+        
+        return ans;
+    }
+};
+
