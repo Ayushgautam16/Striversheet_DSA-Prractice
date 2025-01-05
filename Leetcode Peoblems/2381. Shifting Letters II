@@ -13,4 +13,17 @@ public:
             shift[end + 1] -= (direction == 1 ? 1 : -1);
         }
 
-       
+        int currentShift = 0;
+        for (int i = 0; i < n; ++i) {
+            currentShift += shift[i];
+            shift[i] = currentShift;
+        }
+
+        for (int i = 0; i < n; ++i) {
+            int netShift = (shift[i] % 26 + 26) % 26;
+            s[i] = 'a' + (s[i] - 'a' + netShift) % 26;
+        }
+
+        return s;
+    }
+};
