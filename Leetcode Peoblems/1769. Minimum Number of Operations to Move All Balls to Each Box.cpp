@@ -1,5 +1,4 @@
 // 1769. Minimum Number of Operations to Move All Balls to Each Box
-
 class Solution {
 public:
     vector<int> minOperations(string boxes) {
@@ -22,4 +21,17 @@ public:
 
     for (int i = n - 1; i >= 0; --i) {
         distances[i] += suffixSum - suffixCount * i;
-        
+        if (boxes[i] == '1') {
+            ++suffixCount;
+            suffixSum += i;
+        }
+    }
+
+    vector<int> ans;
+    for (int dist : distances) {
+       ans.push_back(dist);
+    }
+
+    return ans;
+    }
+};
