@@ -22,3 +22,4 @@ public:
 
     for (int i = n - 1; i >= 0; --i) {
         distances[i] += suffixSum - suffixCount * i;
+        
